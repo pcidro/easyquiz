@@ -82,7 +82,7 @@ const perguntas = [
 
   {
     pergunta:
-      "Qual guerra foi iniciada pelo assassinato do arquiduque Franz Ferdinand?",
+      "Qual guerra foi iniciada pelo assassinato do arquiduque Francisco Ferdinando?",
     respostas: [
       "Primeira Guerra Mundial",
       "Segunda Guerra Mundial",
