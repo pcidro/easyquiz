@@ -5,6 +5,7 @@ const numeroPergunta = document.getElementById("numero-pergunta");
 const pontuacao = document.getElementById("pontuacao");
 const pergunta = document.getElementById("pergunta");
 const quiz = document.getElementById("quiz");
+const progressBar = document.getElementById("progress-bar");
 
 let perguntaAtual = 0;
 let pontos = 0;
@@ -165,6 +166,9 @@ function atualizarStatus() {
     perguntas.length
   }`;
   pontuacao.innerText = `Pontuação: ${pontos}`;
+  let progresso = Math.round(((perguntaAtual + 1) / perguntas.length) * 100);
+  progressBar.style.width = progresso + "%";
+  progressBar.innerText = progresso + "%";
 }
 
 function mostrarResultado() {
