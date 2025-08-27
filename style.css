@@ -16,6 +16,7 @@ body {
   padding: 20px;
   position: relative;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body::before {
@@ -93,6 +94,7 @@ body::before {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);
   animation: slideUp 0.8s ease-out;
+  max-height: none;
 }
 
 @keyframes slideUp {
